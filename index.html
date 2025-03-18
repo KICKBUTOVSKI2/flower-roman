@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>websait</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">ЦВЕТНИК</span>
+            <img src="img/32.png" alt="Логотип">
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">На главную</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Товары</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li class="btn"><a href="#">Контакты</a></li>
+                    <li>
+                        <div class="user-icon" onclick="toggleAuthForm()">
+                            <img src="img/vxod.png" alt="Иконка пользователя">
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero container">
+            <div class="hero--info">
+                <h2>Центр садоводства</h2>
+                <h1>Озеленяйте мир к лучшему</h1>
+                <p>Добро пожаловать в мир красоты и вдохновения! Наш магазин цветов — это место, где рождаются эмоции и оживают самые яркие моменты жизни. Мы предлагаем свежие, ароматные букеты, изысканные композиции и комнатные растения, которые станут идеальным подарком или украшением вашего дома. Создавайте праздник вместе с нами — дарите радость, любовь и тепло близким с помощью языка цветов. </p>
+                <button class="btn">Узнать больше</button>
+            </div>
+            <img src="img/3.jpg" alt="Герой-изображение">
+            <h6>О нас</h6>
+            <h5>Уже 10 лет мы дарим нашим клиентам радость и вдохновение, создавая уникальные цветочные композиции и помогая выразить самые теплые чувства. Наш магазин специализируется на продаже свежих сезонных цветов, которые мы тщательно отбираем, чтобы предложить вам только лучшее.  
+                Мы верим, что каждый букет — это не просто набор цветов, а история, эмоция и частичка души. Поэтому мы находим индивидуальный подход к каждому клиенту, внимательно слушаем ваши пожелания и предлагаем идеальные решения для любого повода: будь то романтическое свидание, семейное торжество или просто желание порадовать себя или близких.</h5>
+        </section>
+
+<section class="container trending">
+            <h3>Сезонные растения</h3>
+            <div class="sezon">
+                <div class="block">
+                    <img src="img/4 .jpg" alt="Лили">
+                    <span>Лили</span>
+                </div>
+                <div class="block">
+                    <img src="img/5.jpg" alt="Пенстемон">
+                    <span>Пенстемон</span>
+                </div>
+                <div class="block">
+                    <img src="img/6.jpg" alt="Тысячелистник">
+                    <span>Тысячелистник</span>
+                </div>
+                <div class="block">
+                    <img src="img/7.jpg" alt="Гортензия">
+                    <span>Гортензия</span>
+                </div>
+            </div>
+            <div class="sezon">
+                <div class="block">
+                    <img src="img/8.jpg" alt="Бегония">
+                    <span>Бегония</span>
+                </div>
+                <div class="block">
+                    <img src="img/9.jpg" alt="Вербена">
+                    <span>Вербена</span>
+                </div>
+                <div class="block">
+                    <img src="img/10.jpg" alt="Крокосмия">
+                    <span>Крокосмия</span>
+                </div>
+                <div class="block">
+                    <img src="img/11.jpg" alt="Милый Уильям">
+                    <span>Милый Уильям</span>
+                </div>
+            </div>
+            <div class="sezon">
+                <div class="block">
+                    <img src="img/12.jpg" alt="Огуречник">
+                    <span>Огуречник</span>
+                </div>
+                <div class="block">
+                    <img src="img/13.jpg" alt="Розы">
+                    <span>Розы</span>
+                </div>
+                <div class="block">
+                    <img src="img/14.jpg" alt="Цинния">
+                    <span>Цинния</span>
+                </div>
+                <div class="block">
+                    <img src="img/15.jpg" alt="Черноглазая Сьюзен">
+                    <span>Черноглазая Сьюзен</span>
+                </div>
+            </div>
+        </section>
+
+        <blockquote class="container big-text">
+            <p>"Цветы, как люди, на добро щедры и, людям нежность отдавая, они цветут, сердца обогревая, как маленькие тёплые костры." - Киримизе Хаджимусович Жанэ </p>
+        </blockquote>
+
+        <section class="container banner">
+            <h3>Наши контакты</h3>
+            <p>Дорогие ценители прекрасного! Мы приглашаем Вас совершить погружение в мир красоты и эстетики по адресу: г. Ставрополь, 3-я Промышленная ул., 13А </p>
+            <p>График работы: пн-пт с 9:00 до 17:00</p>
+            <p>Телефон: +7(920)-405-88-94</p>
+        </section>
+    </div>
+
+    <div class="auth-overlay" id="authOverlay">
+        <div class="auth-form">
+            <span class="close-btn" onclick="toggleAuthForm()">&times;</span>
+            <h2>Авторизация</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit">Войти</button>
+            </form>
+            <p>Еще не зарегистрированы? <a href="#" onclick="showRegisterForm()">Создать аккаунт</a></p>
+        </div>
+    
+        <div class="auth-form" id="registerForm">
+            <span class="close-btn" onclick="toggleAuthForm()">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="signupForm">
+                <input type="text" placeholder="Имя" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+            <p>Уже есть аккаунт? <a href="#" onclick="showLoginForm()">Войти</a></p>
+        </div>
+    </div>
+</body>
+</html>
